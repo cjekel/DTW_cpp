@@ -102,8 +102,8 @@ namespace DTW
     int a_data, n_dim, b_data;
     double p, distance;
     std::vector<std::vector<double> > dtw_vector, pairwise_vector;
-    DTW (std::vector<std::vector<double> > a, std::vector<std::vector<double> > b, int n, int m, int o, double p) : 
-      a_vector(a), b_vector(b), n_dim(m), p(p) {
+    DTW (std::vector<std::vector<double> > a, std::vector<std::vector<double> > b, double p) : 
+      a_vector(a), b_vector(b), p(p) {
         a_data = a.size();
         b_data = b.size();
         int a_m = a_vector[0].size();
