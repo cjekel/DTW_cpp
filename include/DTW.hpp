@@ -28,6 +28,8 @@ DTW.hpp*/
 #include <algorithm>
 #include <stdexcept>
 
+#define DTW_VERSION "0.0.1"
+
 namespace DTW
 {
   double p_norm (std::vector<double> a, std::vector<double> b, double p) {

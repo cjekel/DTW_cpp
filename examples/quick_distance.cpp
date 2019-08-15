@@ -27,7 +27,7 @@ quick_distance.cpp*/
 
 int main ()
 {
-  int p = 2;  // the p-norm to use; 2.0 = euclidean, 1.0 = manhattan
+  double p = 2;  // the p-norm to use; 2.0 = euclidean, 1.0 = manhattan
   std::vector<std::vector<double> > a = { {0, 2}, {1, 2}, {2, 2}, {3, 2}, {4, 2} };
   std::vector<std::vector<double> > b = { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0} };
   // Compute the DTW distance between a an b
