@@ -1,0 +1,10 @@
+language: c++
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - g++
+script:
+    - cd tests
+    - ./run_tests.sh

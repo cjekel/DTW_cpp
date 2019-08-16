@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+#  run_tests.sh
+
+#  Copyright (c) 2019 Charles Jekel
+#  MIT licensed
+
+
 status=0
 
 echo "Delete .o files"
