@@ -5,7 +5,7 @@ addons:
             - ubuntu-toolchain-r-test
         packages:
             - g++
-install: export CXX="g++"
 script:
     - cd tests
+    - g++ --version
     - ./run_tests.sh
