@@ -6,8 +6,11 @@
 //
 
 
-#include <cmath>
+#include <cstdlib>
 #include <vector>
+#include <cmath>
+#include <algorithm>
+#include <stdexcept>
 #include "../include/DTW.hpp"
 #include "assertion-macros.h"
 
