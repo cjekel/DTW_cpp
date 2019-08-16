@@ -88,6 +88,7 @@ static int __assert_failures = 0;
 
 /*
  * Assert that `a` is equal to `b`
+ * Changed to %f in 2019
  */
 
 #define assert_equal(a, b) ({ \
