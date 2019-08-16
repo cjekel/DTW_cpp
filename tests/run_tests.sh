@@ -20,7 +20,7 @@ echo "Compling code"
 for file in *.cpp; do
     echo "---------------"
     echo "Compiling $file"
-    g++ "$file" -o "$(basename "$file" .cpp).o"
+    g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o"
     echo "Running $file"
     ./"$(basename "$file" .cpp).o"
     if [ $? -eq 0 ]; then
