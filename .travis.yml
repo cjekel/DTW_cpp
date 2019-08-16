@@ -4,7 +4,7 @@ addons:
         sources:
             - ubuntu-toolchain-r-test
         packages:
-            - g++
+            - g++-7
 script:
     - cd tests
     - ./run_tests.sh
