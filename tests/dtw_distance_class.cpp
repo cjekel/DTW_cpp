@@ -1,5 +1,5 @@
 //
-// dtw_distance_only.cpp
+// dtw_distance_class.cpp
 //
 // Copyright (c) 2019 Charles Jekel
 // MIT licensed
@@ -51,10 +51,10 @@ int main () {
   std::vector<std::vector<double> > b = { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0} };
 
   double ans = 10.0;
-  double dtw = DTW::dtw_distance_only(a, b, 2.0);
-  if (dtw != ans)
+  DTW::DTW MyDtw (a, b, 2.0);
+  if (MyDtw.distance != ans)
   {
-    assert_equal(dtw, ans);
+    assert_equal(MyDtw.distance, ans);
     success = 1;
   }
 
@@ -62,10 +62,10 @@ int main () {
   std::vector<std::vector<double> > p = { {0, 0}, {1, 1}, {2, 2} };
   std::vector<std::vector<double> > q = { {0, 1}, {1, 2}, {2, 3} };
   ans = 3.0;
-  dtw = DTW::dtw_distance_only(p, q, 2.0);
-  if (dtw != ans)
+  DTW::DTW MyDtw1 (p, q, 2.0);
+  if (MyDtw1.distance != ans)
   {
-    assert_equal(dtw, ans);
+    assert_equal(MyDtw1.distance, ans);
     success = 1;
   }
 
@@ -83,11 +83,11 @@ int main () {
   }
   
   double theta_array[100];
-  ans = 9001.0;
-  dtw = DTW::dtw_distance_only(curve1, curve2, 2.0);
-  if (dtw != ans)
+  ans = 9000.0;
+  DTW::DTW MyDtw2 (curve1, curve2, 2.0);
+  if (MyDtw2.distance != ans)
   {
-    assert_equal(dtw, ans);
+    assert_equal(MyDtw2.distance, ans);
     success = 1;
   }
   return success;

@@ -23,14 +23,13 @@
 //
 
 
-#include <iostream>
 #include <cstdlib>
 #include <vector>
 #include <cmath>
 #include <algorithm>
 #include <stdexcept>
+const std::string DTW_VERSION = "0.0.1";
 
-#define DTW_VERSION "0.0.1"
 
 namespace DTW
 {
@@ -139,9 +138,6 @@ namespace DTW
       int i = a_data - 1;
       int j = b_data - 1;
       std::vector<std::vector<int> > mypath = { {i, j} };
-
-      std::cout << "i=" << i << " j=" << j << std::endl;
-
       while (i > 0 || j > 0) {
         if (i == 0)
         {
@@ -170,8 +166,6 @@ namespace DTW
           }
         }
         mypath.push_back ({i, j});
-        std::cout << "i=" << i << " j=" << j << std::endl;
-
       }
       std::reverse(mypath.begin(), mypath.end());
       return mypath;
