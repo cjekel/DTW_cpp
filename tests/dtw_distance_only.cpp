@@ -83,7 +83,7 @@ int main () {
   }
   
   double theta_array[100];
-  ans = 9001.0;
+  ans = 9000.0;
   dtw = DTW::dtw_distance_only(curve1, curve2, 2.0);
   if (dtw != ans)
   {

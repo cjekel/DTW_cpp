@@ -7,6 +7,5 @@ addons:
             - g++
 script:
     - cd tests
-    - alias g++='g++ -std=c++11'
     - g++ --version
     - ./run_tests.sh
