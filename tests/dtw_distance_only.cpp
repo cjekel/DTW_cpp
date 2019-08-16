@@ -68,9 +68,19 @@ int main () {
     success = 1;
   }
 
-  // double r1 = 10.0;
-  // double r2 = 100.0;
-  // std::vector<double> theta = linspace(0.0, 2*M_PI, 100);
+  double r1 = 10.0;
+  double r2 = 100.0;
+  double twopi = 2*M_PI;
+  std::vector<double> theta = linspace(0.0, twopi, 100);
+  std::vector<std::vector<double> > curve1 (100, std::vector<double> (2, 0.0));
+  std::vector<std::vector<double> > curve2 (100, std::vector<double> (2, 0.0));
+  for (int i = 0; i < 100; i++)
+  {
+    curve1[i] = { r1*std::cos(theta[i]), r1*std::sin(theta[i]) };
+    curve2[i] = { r2*std::cos(theta[i]), r2*std::sin(theta[i]) };
+  }
+  
+  double theta_array[100];
   // std::vector<double> x1 = std::sin(theta);
   // std::vector<double> x1 = linspace(0.0, 1.0, 100);
   // std::vector<double> x2 = linspace(0.0, 1.0, 50);
