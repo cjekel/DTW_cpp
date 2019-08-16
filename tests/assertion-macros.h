@@ -94,7 +94,7 @@ static int __assert_failures = 0;
   if (a != b) {\
     __assert_failures++; \
     fprintf(stderr, \
-      "Assertion error: %d == %d (%s:%d)\n", \
+      "Assertion error: %f == %f (%s:%d)\n", \
       a, b, __FILE__, __LINE__); \
     if (__assert_bail) abort(); \
   } \
