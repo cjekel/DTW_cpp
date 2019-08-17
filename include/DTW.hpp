@@ -220,7 +220,7 @@ namespace DTW
         else
         {
           double temp_step = std::fmin(std::fmin(dtw_vector[i-1][j], dtw_vector[i][j-1]),
-                                      dtw_vector[i-1][j-1]);
+                                       dtw_vector[i-1][j-1]);
           if (temp_step == dtw_vector[i-1][j])
           {
             i -= 1;
