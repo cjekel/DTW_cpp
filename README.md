@@ -18,7 +18,7 @@ Dynamic Time Warping (DTW) is an algorithm to measure the similarity between two
 
 ![Image of two different curves](https://raw.githubusercontent.com/cjekel/similarity_measures/master/images/TwoCurves.png)
 
-Consider the above Numerical and Experimental curves. DTW can be used to measure the similarity between the two curves. A DTW distance of zero would mean that the warped curves match exactly.
+Consider the above Numerical and Experimental curves in 2D space. DTW can be used to measure the similarity between the two curves. A DTW distance of zero would mean that the warped curves match exactly.
 
 The order of data points matters. Each curve is a sequence of data points, with a known beginning and ending.
 
