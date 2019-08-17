@@ -51,7 +51,7 @@ namespace DTW
     int b_m = b[0].size();
     if (a_m != b_m)
       {
-        throw std::invalid_argument( "a and b must have the same number of dimmensions!" );
+        throw std::invalid_argument( "a and b must have the same number of dimensions!" );
       }
     std::vector<std::vector<double> > d(n, std::vector<double> (o, 0.0));
     d[0][0] = p_norm(a[0], b[0], p);
@@ -114,7 +114,7 @@ namespace DTW
         
         if (a_m != b_m)
         {
-          throw std::invalid_argument( "a and b must have the same number of dimmensions!" );
+          throw std::invalid_argument( "a and b must have the same number of dimensions!" );
         }
         else
         {
