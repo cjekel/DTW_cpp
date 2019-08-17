@@ -137,7 +137,7 @@ namespace DTW
     std::vector<std::vector<int> > path () {
       int i = a_data - 1;
       int j = b_data - 1;
-      std::vector<std::vector<int> > mypath = { {i, j} };
+      std::vector<std::vector<int> > my_path = { {i, j} };
       while (i > 0 || j > 0) {
         if (i == 0)
         {
@@ -165,10 +165,10 @@ namespace DTW
             j -= 1;
           }
         }
-        mypath.push_back ({i, j});
+        my_path.push_back ({i, j});
       }
-      std::reverse(mypath.begin(), mypath.end());
-      return mypath;
+      std::reverse(my_path.begin(), my_path.end());
+      return my_path;
     }
   };
 

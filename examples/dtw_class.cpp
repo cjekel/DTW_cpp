@@ -16,9 +16,9 @@ int main ()
   std::vector<std::vector<double> > a = { {0, 2}, {1, 2}, {2, 2}, {3, 2}, {4, 2} };
   std::vector<std::vector<double> > b = { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0} };
   // Compute the DTW distance between a an b
-  // a[number_of_data_points][number_of_dimmensions]
-  // b[number_of_data_points][number_of_dimmensions]
-  // The number of dimmensions between a and b must agree
+  // a[number_of_data_points][number_of_dimensions]
+  // b[number_of_data_points][number_of_dimensions]
+  // The number of dimensions between a and b must agree
 
   // initialize the DTW object
   DTW::DTW MyDtw (a, b, p);
