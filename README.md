@@ -2,7 +2,7 @@
 A small Dynamic Time Warping (DTW) single header library for C++
 
 
-[DTW.hpp](https://github.com/cjekel/DTW_cpp/blob/master/include/DTW.hpp) computes the DTW distance between two 2D c++ vectors ```a``` and ```b```!
+[DTW.hpp](https://github.com/cjekel/DTW_cpp/blob/master/include/DTW.hpp) computes the DTW distance between two c++ vectors ```a``` and ```b```! 
 
 # Features
 
