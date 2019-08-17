@@ -12,6 +12,16 @@ A small Dynamic Time Warping (DTW) single header library for C++
 - ```DTW::dtw_distance_only(a, b, p);``` function which returns only the DTW distance
 - ```DTW::DTW MyDtw (a, b, p);``` class contains the pairwise distance vector, DTW distance vector, DTW distance, and a function to calculate the DTW alignment path
 
+# What is Dynamic Time Warping ? 
+
+Dynamic Time Warping (DTW) is an algorithm to measure the similarity between two temporal curves. The wiki page on [DTW](https://en.wikipedia.org/wiki/Dynamic_time_warping) is a great place to learn more.
+
+![Image of two different curves](https://raw.githubusercontent.com/cjekel/similarity_measures/master/images/TwoCurves.png)
+
+Consider the above Numerical and Experimental curves. DTW can be used to measure the similarity between the two curves. A DTW distance of zero would mean that the warped curves match exactly.
+
+The order of data points matters. Each curve is a sequence of data points, with a known beginning and ending.
+
 # Examples
 
 Check out the two [examples](https://github.com/cjekel/DTW_cpp/tree/master/examples).
