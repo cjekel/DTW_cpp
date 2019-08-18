@@ -19,7 +19,7 @@ echo "Compling code"
 for file in tests/*.cpp; do
     echo "---------------"
     echo "Compiling $file"
-    g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o" --coverage
+    g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o" -I include --coverage
     echo "Running $file"
     ./"$(basename "$file" .cpp).o"
     if [ $? -eq 0 ]; then
