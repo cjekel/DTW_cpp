@@ -7,7 +7,7 @@ addons:
             - g++
 
 before_install:
-  - pip install cpp-coveralls
+  - pip install --user cpp-coveralls
 script:
     - cd tests
     - g++ --version
