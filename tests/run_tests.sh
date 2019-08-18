@@ -11,6 +11,9 @@ status=0
 echo "Delete .o files"
 rm dtw_distance_class.o dtw_path_class.o dtw_distance_only.o exceptions.o p_norm.o
 
+echo "Delete coverage files"
+rm *.gcov *.gcda *.gcno
+
 echo "Compling code"
 # g++ dtw_distance_class.cpp -o dtw_distance_class.o
 # g++ dtw_path_class.cpp -o dtw_path_class.o
@@ -20,7 +23,7 @@ echo "Compling code"
 for file in *.cpp; do
     echo "---------------"
     echo "Compiling $file"
-    g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o"
+    g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o" --coverage
     echo "Running $file"
     ./"$(basename "$file" .cpp).o"
     if [ $? -eq 0 ]; then
