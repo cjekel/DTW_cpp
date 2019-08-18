@@ -3,7 +3,7 @@ A small Dynamic Time Warping (DTW) single header library for C++
 
 [DTW.hpp](https://github.com/cjekel/DTW_cpp/blob/master/include/DTW.hpp) computes the DTW distance between two c++ vectors ```a``` and ```b```! 
 
-[![Build Status](https://travis-ci.com/cjekel/DTW_cpp.svg?branch=master)](https://travis-ci.com/cjekel/DTW_cpp)
+[![Build Status](https://travis-ci.com/cjekel/DTW_cpp.svg?branch=master)](https://travis-ci.com/cjekel/DTW_cpp) [![Coverage Status](https://coveralls.io/repos/github/cjekel/DTW_cpp/badge.svg?branch=master)](https://coveralls.io/github/cjekel/DTW_cpp?branch=master)
 
 # Features
 
@@ -29,7 +29,7 @@ Check out the two [examples](https://github.com/cjekel/DTW_cpp/tree/master/examp
 
 # Tests
 
-Run [run_tests.sh](https://github.com/cjekel/DTW_cpp/blob/master/tests/run_tests.sh) in a linux environment. 
+Run [run_tests.sh](https://github.com/cjekel/DTW_cpp/blob/master/run_tests.sh) in a linux environment. 
 - travisci tests using Ubuntu Xenial and g++ version 5.4.0
 - also tested on openSUSE Leap 15.1 and g++ version 7.4.0
 
