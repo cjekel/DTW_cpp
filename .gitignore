@@ -36,3 +36,8 @@
 
 # vim
 *.swp
+
+# gcov
+*.gcov
+*.gcda
+*.gcno

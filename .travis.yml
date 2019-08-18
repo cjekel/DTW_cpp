@@ -7,11 +7,9 @@ addons:
             - g++
 
 before_install:
-  - pip install --user cpp-coveralls
-script:
-    - cd tests
+    - pip install --user cpp-coveralls
     - g++ --version
+script:
     - ./run_tests.sh
 after_success:
-    - cd ..
-    - coveralls --exclude tests
+    - coveralls --exclude tests --exclude examples

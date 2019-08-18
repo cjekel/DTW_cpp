@@ -8,7 +8,7 @@
 
 #include <cmath>
 #include <vector>
-#include "../include/DTW.hpp"
+#include "include/DTW.hpp"
 #include "assertion-macros.h"
 
 

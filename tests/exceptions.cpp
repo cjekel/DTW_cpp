@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <stdexcept>
-#include "../include/DTW.hpp"
+#include "include/DTW.hpp"
 
 int main () {
   int success_one = 1;

@@ -9,18 +9,14 @@
 status=0
 
 echo "Delete .o files"
-rm dtw_distance_class.o dtw_path_class.o dtw_distance_only.o exceptions.o p_norm.o
+rm tests/dtw_distance_class.o tests/dtw_path_class.o tests/dtw_distance_only.o tests/exceptions.o p_norm.o
 
 echo "Delete coverage files"
-rm *.gcov *.gcda *.gcno
+rm tests/*.gcov tests/*.gcda tests/*.gcno
 
 echo "Compling code"
-# g++ dtw_distance_class.cpp -o dtw_distance_class.o
-# g++ dtw_path_class.cpp -o dtw_path_class.o
-# g++ dtw_distance_only.cpp -o dtw_distance_only.o
-# g++ excpetions.cpp -o excpetions.o
 
-for file in *.cpp; do
+for file in tests/*.cpp; do
     echo "---------------"
     echo "Compiling $file"
     g++ -std=c++11 "$file" -o "$(basename "$file" .cpp).o" --coverage
