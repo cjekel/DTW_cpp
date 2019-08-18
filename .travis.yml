@@ -13,4 +13,5 @@ script:
     - g++ --version
     - ./run_tests.sh
 after_success:
-    - coveralls -l ../include/DTW.hpp
+    - cd ..
+    - coveralls --exclude tests
