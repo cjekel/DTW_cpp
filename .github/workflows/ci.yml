@@ -17,3 +17,14 @@ jobs:
       run: |
         g++ --version
         ./run_tests.sh
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: dtw_distance_class.gcda,dtw_distance_only.gcda,dtw_path_class.gcda,exceptions.gcda,p_norm.gcda
+        directory: ./coverage/reports/
+        flags: unittests
+        env_vars: OS
+        name: codecov-umbrella
+        fail_ci_if_error: true
+        verbose: true
