@@ -26,10 +26,11 @@ jobs:
       run: |
         g++ --version
         ./run_tests.sh
-    - name: Generate coverage
-      run: |
         gcovr -r . -e tests/* --xml-pretty -o coverage.xml
         cat coverage.xml
+    - name: Generate coverage
+      run: |
+        echo "hello world"
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
