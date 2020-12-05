@@ -28,7 +28,8 @@ jobs:
         ./run_tests.sh
     - name: Generate coverage
       run: |
-        gcovr -r . -e tests/* --xml -o coverage.xml
+        gcovr -r . -e tests/* --xml-pretty -o coverage.xml
+        cat coverage.xml
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
