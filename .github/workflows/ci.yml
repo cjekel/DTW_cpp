@@ -26,7 +26,7 @@ jobs:
       run: |
         g++ --version
         ./run_tests.sh
-        gcovr -r . -e tests/ --xml-o coverage.xml
+        gcovr -r . -e tests/ --xml -o coverage.xml
     - name: Generate coverage
       run: |
         echo "hello world"
