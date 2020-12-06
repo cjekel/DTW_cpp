@@ -9,6 +9,7 @@
 #include <stdexcept>
 #include <DTW.hpp>
 
+
 int main () {
   int success_one = 1;
   int success_two = 1;

@@ -9,10 +9,10 @@
 status=0
 
 echo "Delete .o files"
-rm tests/dtw_distance_class.o tests/dtw_path_class.o tests/dtw_distance_only.o tests/exceptions.o p_norm.o
+rm dtw_distance_class.o dtw_path_class.odtw_distance_only.o exceptions.o p_norm.o
 
 echo "Delete coverage files"
-rm tests/*.gcov tests/*.gcda tests/*.gcno
+rm *.gcov *.gcda *.gcno
 
 echo "Compling code"
 
