@@ -88,7 +88,7 @@ namespace DTW
       }
     for (int i=1; i < o ; i++)
       {
-        d[0][i] = d[0][i-1] + p_norm(a[i], b[0], p);
+        d[0][i] = d[0][i-1] + p_norm(a[0], b[i], p);
       }
     for (int i=1; i < n ; i++)
       {
