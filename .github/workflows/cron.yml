@@ -27,17 +27,3 @@ jobs:
         g++ --version
         ./run_tests.sh
         gcovr -r . -e tests/ --xml -o coverage.xml
-    - name: Generate coverage
-      run: |
-        echo "hello world"
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: coverage.xml
-        directory: ./coverage/reports/
-        flags: unittests
-        env_vars: OS
-        name: codecov-umbrella
-        fail_ci_if_error: true
-        verbose: true
