@@ -1,7 +1,6 @@
 name: DTW_cpp cron
 
 on:
-  push:
   schedule:
     # Run tests every saturday
     - cron:  '* * * * */6'
