@@ -2,9 +2,6 @@ name: DTW_cpp ci
 
 on:
   push:
-  schedule:
-    # Run tests every saturday
-    - cron:  '* * * * */6'
 
 jobs:
   build:
